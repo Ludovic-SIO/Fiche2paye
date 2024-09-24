@@ -27,6 +27,9 @@ namespace F2PAYE
             Console.WriteLine("Quelle est votre taux horaire ?");
             double tauxHoraire = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Taux horaires : {0}", tauxHoraire);
+
+            double salaireBrut = nbHeureTravaillées * tauxHoraire;
+            Console.WriteLine("Salaire brut : {0}", salaireBrut);
             Console.ReadKey();
 
         }
